@@ -10,7 +10,7 @@ export const metadata = {
 export default function AddOnsPage() {
   return (
     <div>
-      <section className="section-padding bg-brand-black text-brand-yellow">
+      <section className="section-padding bg-brand-black text-brand-white">
         <div className="container-main text-center">
           <SectionHeading
             title="Creative Add-Ons"

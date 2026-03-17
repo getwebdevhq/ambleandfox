@@ -45,17 +45,18 @@ export default function HomePage() {
   return (
     <>
       {/* ───── HERO ───── */}
-      <section className="section-padding border-b-3 border-brand-black bg-brand-yellow">
+      <section className="section-padding border-b-3 border-brand-black bg-brand-black text-brand-white">
         <div className="container-main">
           <div className="max-w-3xl">
             <h1 className="font-heading text-4xl font-bold uppercase leading-tight tracking-tight md:text-6xl lg:text-7xl">
               Websites Built
               <br />
               for Indian{" "}
-              <span className="bg-brand-black px-2 text-brand-yellow">
+              <span className="bg-brand-turquoise px-2 text-brand-black">
                 Exporters
               </span>
             </h1>
+            <div className="mt-4 h-2 w-24 bg-brand-crimson"></div>
             <p className="mt-6 font-body text-lg leading-relaxed md:text-xl">
               Turn trade fair visitors into international buyers. We build
               export-ready digital showrooms for handicraft, furniture, textile,
@@ -177,7 +178,7 @@ export default function HomePage() {
       </section>
 
       {/* ───── PRICING PREVIEW ───── */}
-      <section className="section-padding border-b-3 border-brand-black bg-gray-50">
+      <section className="section-padding border-b-3 border-brand-black bg-brand-gray">
         <div className="container-main">
           <SectionHeading
             title="Simple, Transparent Pricing"
@@ -187,7 +188,7 @@ export default function HomePage() {
             {pricingPreview.map((p) => (
               <BrutalistCard key={p.name} highlighted={p.popular}>
                 {p.popular && (
-                  <span className="mb-3 inline-block border-3 border-brand-black bg-brand-red px-3 py-1 font-heading text-xs font-bold uppercase text-brand-white">
+                  <span className="mb-3 inline-block border-3 border-brand-black bg-brand-crimson px-3 py-1 font-heading text-xs font-bold uppercase text-brand-white">
                     Most Popular
                   </span>
                 )}
@@ -221,7 +222,7 @@ export default function HomePage() {
       </section>
 
       {/* ───── CTA ───── */}
-      <section className="section-padding bg-brand-red text-brand-white">
+      <section className="section-padding border-t-8 border-brand-crimson bg-brand-white text-brand-black">
         <div className="container-main text-center">
           <h2 className="font-heading text-3xl font-bold uppercase md:text-5xl">
             Ready to Go Global?

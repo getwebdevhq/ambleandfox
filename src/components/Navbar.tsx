@@ -32,7 +32,7 @@ export default function Navbar() {
             <Link
               key={link.href}
               href={link.href}
-              className="border-2 border-transparent px-4 py-2 font-heading text-sm font-bold uppercase tracking-wide transition-all duration-150 hover:border-brand-black hover:bg-brand-yellow hover:shadow-brutal-hover"
+              className="border-2 border-transparent px-4 py-2 font-heading text-sm font-bold uppercase tracking-wide transition-all duration-150 hover:border-brand-black hover:bg-brand-cyan hover:shadow-brutal-hover"
             >
               {link.label}
             </Link>
@@ -57,7 +57,7 @@ export default function Navbar() {
               key={link.href}
               href={link.href}
               onClick={() => setMobileOpen(false)}
-              className="block border-b-2 border-brand-black px-6 py-4 font-heading text-base font-bold uppercase tracking-wide transition-colors duration-150 hover:bg-brand-yellow"
+              className="block border-b-2 border-brand-black px-6 py-4 font-heading text-base font-bold uppercase tracking-wide transition-colors duration-150 hover:bg-brand-cyan"
             >
               {link.label}
             </Link>

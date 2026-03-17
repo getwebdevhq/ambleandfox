@@ -36,7 +36,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-gray-400 transition-colors duration-150 hover:text-brand-yellow"
+                    className="text-gray-400 transition-colors duration-150 hover:text-brand-cyan"
                   >
                     {link.label}
                   </Link>
@@ -54,7 +54,7 @@ export default function Footer() {
               <li>
                 <a
                   href="mailto:hello@ambleandfox.com"
-                  className="transition-colors duration-150 hover:text-brand-yellow"
+                  className="transition-colors duration-150 hover:text-brand-cyan"
                 >
                   hello@ambleandfox.com
                 </a>
@@ -64,7 +64,7 @@ export default function Footer() {
                   href="https://wa.me/917866955638?text=Hi%20Amble%20%26%20Fox%2C%20I%27m%20interested%20in%20your%20services"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="transition-colors duration-150 hover:text-brand-yellow"
+                  className="transition-colors duration-150 hover:text-brand-cyan"
                 >
                   WhatsApp Us →
                 </a>

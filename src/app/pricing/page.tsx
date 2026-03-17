@@ -56,8 +56,8 @@ const plans = [
 
 export default function PricingPage() {
   return (
-    <div className="bg-gray-50 pb-24">
-      <section className="section-padding bg-brand-yellow">
+    <div className="bg-brand-gray pb-24">
+      <section className="section-padding bg-brand-black text-brand-white">
         <div className="container-main text-center">
           <SectionHeading
             title="Simple, Transparent Pricing"
@@ -77,7 +77,7 @@ export default function PricingPage() {
             >
               {plan.highlighted && (
                 <div className="absolute -top-4 left-1/2 -translate-x-1/2">
-                  <span className="inline-block border-3 border-brand-black bg-brand-red px-4 py-1 font-heading text-sm font-bold uppercase tracking-wide text-brand-white">
+                  <span className="inline-block border-3 border-brand-black bg-brand-crimson px-4 py-1 font-heading text-sm font-bold uppercase tracking-wide text-brand-white">
                     Most Popular
                   </span>
                 </div>
@@ -106,7 +106,7 @@ export default function PricingPage() {
               <ul className="mb-8 flex-1 space-y-3 font-body text-sm">
                 {plan.features.map((feature, i) => (
                   <li key={i} className="flex items-start">
-                    <span className="mr-2 mt-0.5 text-brand-red">✔</span>
+                    <span className="mr-2 mt-0.5 text-brand-cyan">✔</span>
                     {feature}
                   </li>
                 ))}
@@ -137,7 +137,7 @@ export default function PricingPage() {
               Hosting, server maintenance, SSL certificate, daily backups, and minor text/image updates.
             </p>
           </div>
-          <div className="mb-6 border-l-4 border-brand-red pl-4">
+          <div className="mb-6 border-l-4 border-brand-crimson pl-4">
             <h4 className="font-heading text-lg font-bold text-brand-black">
               Can I upgrade later?
             </h4>

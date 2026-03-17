@@ -10,10 +10,13 @@ const config: Config = {
     extend: {
       colors: {
         brand: {
-          black: "#000000",
+          black: "#0A0A0A",
           white: "#FFFFFF",
+          turquoise: "#00E5D0",
+          cyan: "#00BFFF",
+          crimson: "#E63946",
           yellow: "#FFE600",
-          red: "#FF3B30",
+          gray: "#F5F5F5",
         },
       },
       fontFamily: {
@@ -21,11 +24,13 @@ const config: Config = {
         body: ["var(--font-inter)", "sans-serif"],
       },
       boxShadow: {
-        brutal: "4px 4px 0px #000000",
-        "brutal-lg": "8px 8px 0px #000000",
-        "brutal-hover": "2px 2px 0px #000000",
+        brutal: "4px 4px 0px #0A0A0A",
+        "brutal-lg": "8px 8px 0px #0A0A0A",
+        "brutal-hover": "2px 2px 0px #0A0A0A",
+        "brutal-turquoise": "4px 4px 0px #00E5D0",
+        "brutal-cyan": "4px 4px 0px #00BFFF",
+        "brutal-crimson": "4px 4px 0px #E63946",
         "brutal-yellow": "4px 4px 0px #FFE600",
-        "brutal-red": "4px 4px 0px #FF3B30",
       },
       borderWidth: {
         3: "3px",

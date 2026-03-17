@@ -13,9 +13,9 @@ interface BrutalistButtonProps {
 }
 
 const variantStyles: Record<Variant, string> = {
-  primary: "bg-brand-yellow text-brand-black hover:bg-yellow-300",
-  secondary: "bg-brand-white text-brand-black hover:bg-gray-100",
-  danger: "bg-brand-red text-brand-white hover:bg-red-600",
+  primary: "bg-brand-turquoise text-brand-black hover:bg-brand-cyan",
+  secondary: "bg-brand-white text-brand-black hover:bg-brand-cyan",
+  danger: "bg-brand-crimson text-brand-white hover:brightness-90",
 };
 
 export default function BrutalistButton({

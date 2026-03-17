@@ -58,7 +58,7 @@ export default function ContactPage() {
             )}
             
             {status === "error" && (
-              <div className="mb-6 border-3 border-brand-black bg-brand-red p-4 font-body font-bold text-white">
+              <div className="mb-6 border-3 border-brand-black bg-brand-crimson p-4 font-body font-bold text-white">
                 Something went wrong. Please try again or use WhatsApp.
               </div>
             )}
@@ -108,7 +108,7 @@ export default function ContactPage() {
             <div className="space-y-6 font-body">
               <div>
                 <h4 className="font-heading text-sm font-bold uppercase text-gray-500">Email</h4>
-                <a href="mailto:hello@ambleandfox.com" className="text-lg font-bold hover:text-brand-red">hello@ambleandfox.com</a>
+                <a href="mailto:hello@ambleandfox.com" className="text-lg font-bold hover:text-brand-cyan">hello@ambleandfox.com</a>
               </div>
               
               <div>
