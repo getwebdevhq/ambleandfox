@@ -1,0 +1,20 @@
+# Amble & Fox
+
+> Websites Built for Indian Exporters
+
+We build high-performance, export-ready websites and digital showrooms for Indian handicraft, furniture, textile, and decor manufacturers. 
+
+## Pricing
+- Basic: ₹9,000 one-time + ₹499/mo
+- Standard: ₹19,000 one-time + ₹999/mo (Most Popular)
+- Pro: ₹29,000 one-time + ₹1,499/mo
+
+## Services
+- Digital showrom website design
+- QR Code generation for booths and products
+- Downloadable PDF Catalogs
+- Product Photography
+
+## Contact
+Email: hello@ambleandfox.com
+WhatsApp: +91 98765 43210 (simulated)
