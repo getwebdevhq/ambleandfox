@@ -10,30 +10,21 @@ const config: Config = {
     extend: {
       colors: {
         brand: {
-          black: "#0A0A0A",
+          black: "#1A1A1A",
           white: "#FFFFFF",
-          turquoise: "#00E5D0",
-          cyan: "#00BFFF",
-          crimson: "#E63946",
-          yellow: "#FFE600",
+          primary: "#E67E22",
+          background: "#F5F1EA",
           gray: "#F5F5F5",
+          "gray-light": "#FAFAFA",
         },
       },
       fontFamily: {
-        heading: ["var(--font-space-grotesk)", "sans-serif"],
+        heading: ["var(--font-playfair)", "serif"],
         body: ["var(--font-inter)", "sans-serif"],
       },
       boxShadow: {
-        brutal: "4px 4px 0px #0A0A0A",
-        "brutal-lg": "8px 8px 0px #0A0A0A",
-        "brutal-hover": "2px 2px 0px #0A0A0A",
-        "brutal-turquoise": "4px 4px 0px #00E5D0",
-        "brutal-cyan": "4px 4px 0px #00BFFF",
-        "brutal-crimson": "4px 4px 0px #E63946",
-        "brutal-yellow": "4px 4px 0px #FFE600",
-      },
-      borderWidth: {
-        3: "3px",
+        soft: "0 10px 40px -10px rgba(0,0,0,0.08)",
+        "soft-lg": "0 20px 40px -10px rgba(0,0,0,0.12)",
       },
     },
   },

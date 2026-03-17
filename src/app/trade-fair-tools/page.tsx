@@ -1,4 +1,4 @@
-import BrutalistButton from "@/components/BrutalistButton";
+import Button from "@/components/Button";
 import SectionHeading from "@/components/SectionHeading";
 
 export const metadata = {
@@ -9,24 +9,24 @@ export const metadata = {
 export default function TradeFairToolsPage() {
   return (
     <div>
-      <section className="section-padding bg-brand-black text-brand-white">
+      <section className="section-padding bg-brand-background text-brand-black">
         <div className="container-main text-center">
           <SectionHeading
             title="Win The Trade Fair"
             subtitle="Bridge the gap between your physical booth and digital showroom."
             className="mb-8"
           />
-          <p className="mx-auto max-w-2xl font-body text-lg text-gray-300">
+          <p className="mx-auto max-w-2xl font-body text-lg text-gray-600">
             Buyers are overwhelmed at fairs. Give them an easy way to save your catalog to their phone instantly with QR integrations.
           </p>
         </div>
       </section>
 
-      <section className="section-padding border-b-3 border-brand-black">
+      <section className="section-padding border-b border-gray-100 bg-white">
         <div className="container-main">
           <div className="grid gap-12 md:grid-cols-2 md:items-center">
             <div>
-              <h3 className="mb-4 font-heading text-3xl font-bold uppercase">
+              <h3 className="mb-4 font-heading text-3xl font-bold uppercase text-brand-black">
                 Booth QR Codes
               </h3>
               <p className="mb-6 font-body text-lg leading-relaxed text-gray-600">
@@ -40,8 +40,8 @@ export default function TradeFairToolsPage() {
               </ul>
             </div>
             <div className="flex justify-center">
-              <div className="flex h-64 w-64 items-center justify-center border-3 border-brand-black bg-brand-white shadow-brutal-lg">
-                <div className="text-center font-heading text-2xl font-bold text-gray-400">
+              <div className="flex h-64 w-64 items-center justify-center rounded-2xl bg-white shadow-soft">
+                <div className="text-center font-heading text-2xl font-medium text-gray-400">
                   QR PREVIEW
                 </div>
               </div>
@@ -50,7 +50,7 @@ export default function TradeFairToolsPage() {
         </div>
       </section>
 
-      <section className="section-padding border-b-3 border-brand-black bg-brand-yellow">
+      <section className="section-padding bg-brand-background">
         <div className="container-main">
           <div className="grid gap-12 md:grid-cols-2 md:items-center">
             <div className="order-2 flex justify-center md:order-1">
@@ -58,39 +58,39 @@ export default function TradeFairToolsPage() {
                 {[1, 2, 3, 4].map((i) => (
                   <div
                     key={i}
-                    className="h-32 w-24 border-3 border-brand-black bg-brand-white p-2 shadow-brutal"
+                    className="h-32 w-24 rounded-lg bg-white p-2 shadow-soft"
                   >
-                    <div className="h-12 border-2 border-dashed border-gray-300"></div>
-                    <div className="mt-2 h-2 w-full bg-gray-200"></div>
-                    <div className="mt-1 h-2 w-2/3 bg-gray-200"></div>
+                    <div className="h-12 border border-dashed border-gray-200"></div>
+                    <div className="mt-2 h-2 w-full bg-gray-100"></div>
+                    <div className="mt-1 h-2 w-2/3 bg-gray-100"></div>
                   </div>
                 ))}
               </div>
             </div>
             <div className="order-1 md:order-2">
-              <h3 className="mb-4 font-heading text-3xl font-bold uppercase">
+              <h3 className="mb-4 font-heading text-3xl font-bold text-brand-black">
                 Product QR Tags
               </h3>
-              <p className="mb-6 font-body text-lg leading-relaxed text-gray-800">
+              <p className="mb-6 font-body text-lg leading-relaxed text-gray-600">
                 Attach small QR tags to individual display items. When a buyer likes a specific table or vase, they scan it to see dimensions, materials, and variations online.
               </p>
-              <BrutalistButton href="/contact" variant="secondary">
+              <Button href="/contact" variant="secondary">
                 Ask About QR Setup →
-              </BrutalistButton>
+              </Button>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="section-padding">
+      <section className="section-padding bg-white">
         <div className="container-main text-center">
           <SectionHeading
             title="Ready for your next fair?"
             subtitle="Get your site up and running in just 14 days."
           />
-          <BrutalistButton href="/contact" variant="primary">
+          <Button href="/contact" variant="primary">
             Start Your Project
-          </BrutalistButton>
+          </Button>
         </div>
       </section>
     </div>

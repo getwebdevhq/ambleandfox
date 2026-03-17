@@ -1,5 +1,5 @@
-import BrutalistCard from "@/components/BrutalistCard";
-import BrutalistButton from "@/components/BrutalistButton";
+import Card from "@/components/Card";
+import Button from "@/components/Button";
 import SectionHeading from "@/components/SectionHeading";
 
 export const metadata = {
@@ -10,7 +10,7 @@ export const metadata = {
 export default function AddOnsPage() {
   return (
     <div>
-      <section className="section-padding bg-brand-black text-brand-white">
+      <section className="section-padding bg-brand-background text-brand-black">
         <div className="container-main text-center">
           <SectionHeading
             title="Creative Add-Ons"
@@ -23,7 +23,7 @@ export default function AddOnsPage() {
       <section className="section-padding">
         <div className="container-main max-w-5xl">
           <div className="grid gap-8 md:grid-cols-2">
-            <BrutalistCard>
+            <Card>
               <div className="mb-4 text-5xl">📸</div>
               <h3 className="mb-2 font-heading text-2xl font-bold uppercase">
                 Product Photography
@@ -41,12 +41,12 @@ export default function AddOnsPage() {
                 <li>• White background cutoff</li>
                 <li>• Web-optimized formats</li>
               </ul>
-              <BrutalistButton href="/contact" className="w-full text-center">
+              <Button href="/contact" className="w-full text-center">
                 Book Shoot
-              </BrutalistButton>
-            </BrutalistCard>
+              </Button>
+            </Card>
 
-            <BrutalistCard>
+            <Card>
               <div className="mb-4 text-5xl">🎨</div>
               <h3 className="mb-2 font-heading text-2xl font-bold uppercase">
                 PDF Catalog Design
@@ -64,10 +64,10 @@ export default function AddOnsPage() {
                 <li>• Custom branded layout</li>
                 <li>• Print & Digital ready versions</li>
               </ul>
-              <BrutalistButton href="/contact" className="w-full text-center">
+              <Button href="/contact" className="w-full text-center">
                 Request Design
-              </BrutalistButton>
-            </BrutalistCard>
+              </Button>
+            </Card>
           </div>
         </div>
       </section>

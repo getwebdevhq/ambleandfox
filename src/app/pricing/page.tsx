@@ -1,152 +1,98 @@
-import BrutalistButton from "@/components/BrutalistButton";
-import BrutalistCard from "@/components/BrutalistCard";
 import SectionHeading from "@/components/SectionHeading";
+import Card from "@/components/Card";
+import Button from "@/components/Button";
 
 export const metadata = {
-  title: "Pricing — Export Websites",
-  description: "Transparent pricing for export-ready digital showrooms.",
+  title: "Pricing | Amble & Fox",
+  description: "Transparent pricing for lead generation systems.",
 };
+
+const setupItems = [
+  "Website / Landing System – ₹12,000",
+  "Campaign Setup – ₹8,000",
+];
 
 const plans = [
   {
     name: "Basic",
-    price: "₹9,000",
-    monthly: "₹499/mo",
-    description: "Perfect for getting your catalog online quickly.",
-    features: [
-      "Up to 5 Pages",
-      "Product Gallery (20 items)",
-      "WhatsApp Chat Button",
-      "Inquiry Form",
-      "Mobile Responsive",
-    ],
-    highlighted: false,
+    price: "₹5,000/month",
+    features: ["3 creatives/month", "2 copies"],
   },
   {
-    name: "Standard",
-    price: "₹19,000",
-    monthly: "₹999/mo",
-    description: "The sweet spot for most growing exporters.",
-    features: [
-      "Up to 10 Pages",
-      "100 Products Catalog",
-      "Product Categories",
-      "Downloadable PDF Catalog",
-      "WhatsApp Automation",
-      "Fast SSD Hosting",
-    ],
-    highlighted: true,
+    name: "Growth",
+    price: "₹8,000/month",
+    features: ["6 creatives/month", "4 copies", "Variations"],
+    highlight: true,
   },
   {
-    name: "Pro",
-    price: "₹29,000",
-    monthly: "₹1,499/mo",
-    description: "For established exporters needing scale.",
-    features: [
-      "Unlimited Products",
-      "Advanced Search/Filters",
-      "Basic Inquiry CRM",
-      "Google Analytics Setup",
-      "Priority Support",
-      "Custom Domain Included",
-    ],
-    highlighted: false,
+    name: "Dominate",
+    price: "₹12,000/month",
+    features: ["10–12 creatives", "Multiple hooks", "A/B testing"],
   },
 ];
 
 export default function PricingPage() {
   return (
-    <div className="bg-brand-gray pb-24">
-      <section className="section-padding bg-brand-black text-brand-white">
-        <div className="container-main text-center">
+    <>
+      <section className="section-padding bg-brand-background text-brand-black">
+        <div className="container-main">
           <SectionHeading
-            title="Simple, Transparent Pricing"
-            subtitle="No hidden costs. Pay a one-time setup fee, then a small monthly maintenance."
-            className="mb-0"
+            title="Pricing"
+            subtitle="Transparent and results-driven. We build the engine once, and fuel it monthly."
           />
-        </div>
-      </section>
 
-      <section className="container-main mt-[-3rem] px-4 md:px-8">
-        <div className="grid gap-6 md:grid-cols-3">
-          {plans.map((plan) => (
-            <BrutalistCard
-              key={plan.name}
-              highlighted={plan.highlighted}
-              className="flex flex-col relative"
-            >
-              {plan.highlighted && (
-                <div className="absolute -top-4 left-1/2 -translate-x-1/2">
-                  <span className="inline-block border-3 border-brand-black bg-brand-crimson px-4 py-1 font-heading text-sm font-bold uppercase tracking-wide text-brand-white">
-                    Most Popular
-                  </span>
-                </div>
-              )}
-              <h3 className="mb-2 font-heading text-2xl font-bold uppercase">
-                {plan.name}
-              </h3>
-              <p className="mb-6 font-body text-sm text-gray-600 h-10">
-                {plan.description}
-              </p>
-              <div className="mb-2">
-                <span className="font-heading text-4xl font-bold">
-                  {plan.price}
-                </span>
-                <span className="ml-2 font-body text-sm text-gray-500">
-                  setup
-                </span>
-              </div>
-              <p className="mb-8 font-heading text-xl font-bold text-gray-700">
-                + {plan.monthly}{" "}
-                <span className="font-body text-sm font-normal text-gray-500">
-                  maintenance
-                </span>
-              </p>
-
-              <ul className="mb-8 flex-1 space-y-3 font-body text-sm">
-                {plan.features.map((feature, i) => (
-                  <li key={i} className="flex items-start">
-                    <span className="mr-2 mt-0.5 text-brand-cyan">✔</span>
-                    {feature}
+          {/* Setup Fee Section */}
+          <div className="mx-auto mb-20 max-w-3xl">
+            <Card highlighted className="text-center relative overflow-hidden">
+              <div className="absolute top-0 inset-x-0 h-1 bg-brand-primary"></div>
+              <h3 className="mb-6 font-heading text-3xl font-medium">One-Time Setup</h3>
+              <ul className="mb-8 space-y-3 font-body text-lg text-gray-600">
+                {setupItems.map((item, i) => (
+                  <li key={i} className="flex items-center justify-center gap-2">
+                    <svg className="h-5 w-5 text-brand-primary shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    {item}
                   </li>
                 ))}
               </ul>
+              <div className="border-t border-gray-100 pt-6">
+                <p className="font-heading text-sm font-bold uppercase tracking-widest text-gray-400 mb-2">Total</p>
+                <p className="font-heading text-5xl font-bold">₹20,000</p>
+              </div>
+            </Card>
+          </div>
 
-              <BrutalistButton
-                href="/contact"
-                variant={plan.highlighted ? "primary" : "secondary"}
-                className="w-full text-center"
-              >
-                Choose {plan.name}
-              </BrutalistButton>
-            </BrutalistCard>
-          ))}
+          {/* Monthly Plans */}
+          <div className="grid gap-6 md:grid-cols-3 max-w-6xl mx-auto items-start">
+            {plans.map((plan) => (
+              <Card key={plan.name} highlighted={plan.highlight} className={`${plan.highlight ? 'md:-translate-y-4' : ''}`}>
+                <h3 className="font-heading text-2xl font-medium mb-4">{plan.name}</h3>
+                <div className="mb-8">
+                  <p className="font-heading text-4xl font-bold">{plan.price}</p>
+                </div>
+                <ul className="mb-8 space-y-4 font-body text-gray-600">
+                  {plan.features.map((feature, i) => (
+                    <li key={i} className="flex gap-3 items-start">
+                      <svg className="h-5 w-5 text-brand-primary shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                      {feature}
+                    </li>
+                  ))}
+                </ul>
+                <Button
+                  href="/contact"
+                  variant={plan.highlight ? "primary" : "outline"}
+                  className="w-full"
+                >
+                  Choose {plan.name}
+                </Button>
+              </Card>
+            ))}
+          </div>
         </div>
       </section>
-
-      <section className="section-padding container-main mt-16 text-center">
-        <h3 className="mb-4 font-heading text-2xl font-bold uppercase">
-          Frequently Asked Questions
-        </h3>
-        <div className="mx-auto max-w-2xl text-left font-body text-gray-600">
-          <div className="mb-6 border-l-4 border-brand-yellow pl-4">
-            <h4 className="font-heading text-lg font-bold text-brand-black">
-              What does the monthly fee cover?
-            </h4>
-            <p className="mt-1 text-sm">
-              Hosting, server maintenance, SSL certificate, daily backups, and minor text/image updates.
-            </p>
-          </div>
-          <div className="mb-6 border-l-4 border-brand-crimson pl-4">
-            <h4 className="font-heading text-lg font-bold text-brand-black">
-              Can I upgrade later?
-            </h4>
-            <p className="mt-1 text-sm">
-              Yes, you can move from Basic to Standard or Pro at any time. You only pay the difference in setup fees.
-            </p>
-          </div>
-        </div>
-      </section>
-    </div>
+    </>
   );
 }

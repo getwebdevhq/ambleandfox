@@ -12,45 +12,23 @@
   }
 
   body {
-    @apply font-body text-brand-black bg-brand-white;
+    @apply font-body text-brand-black bg-brand-background;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-heading font-bold;
+    @apply font-heading tracking-tight;
   }
 
   ::selection {
-    @apply bg-brand-yellow text-brand-black;
+    @apply bg-brand-primary text-brand-white;
   }
 }
 
 @layer components {
-  .brutal-card {
-    @apply border-3 border-brand-black bg-brand-white shadow-brutal;
-  }
-
-  .brutal-card-hover {
-    @apply brutal-card transition-all duration-150 ease-in-out;
-  }
-
-  .brutal-card-hover:hover {
-    @apply shadow-brutal-hover translate-x-[2px] translate-y-[2px];
-  }
-
-  .brutal-card-highlight {
-    @apply border-3 border-brand-black bg-brand-yellow shadow-brutal-lg;
-  }
-
-  .brutal-input {
-    @apply border-3 border-brand-black px-4 py-3 font-body text-base
-      outline-none transition-shadow duration-150
-      focus:shadow-brutal focus:ring-0;
-  }
-
   .section-padding {
-    @apply px-4 py-16 md:px-8 lg:px-16 lg:py-24;
+    @apply px-4 py-20 md:px-8 lg:px-16 lg:py-32;
   }
 
   .container-main {
