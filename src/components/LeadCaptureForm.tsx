@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Button from "@/components/Button";
 
 export default function LeadCaptureForm({ industry, location }: { industry?: string, location?: string }) {
   const [loading, setLoading] = useState(false);
@@ -31,7 +30,7 @@ export default function LeadCaptureForm({ industry, location }: { industry?: str
 
       if (!res.ok) throw new Error("Failed to submit");
       setSuccess(true);
-    } catch (err) {
+    } catch {
       setError("Something went wrong. Please try messaging us on WhatsApp directly.");
     } finally {
       setLoading(false);

@@ -2,7 +2,6 @@ import { Metadata } from 'next';
 import Button from "@/components/Button";
 import Card from "@/components/Card";
 import SectionHeading from "@/components/SectionHeading";
-import Image from "next/image";
 import { notFound } from "next/navigation";
 import LeadCaptureForm from "@/components/LeadCaptureForm";
 
