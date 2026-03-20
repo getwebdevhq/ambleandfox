@@ -1,20 +1,26 @@
 # Amble & Fox
 
-> Websites Built for Indian Exporters
+> Amble & Fox: Turn your business into a lead-generating machine.
 
-We build high-performance, export-ready websites and digital showrooms for Indian handicraft, furniture, textile, and decor manufacturers. 
+We are a performance marketing agency that helps businesses capture leads and drive sales through Meta ads and WhatsApp-based funnels. 
 
-## Pricing
-- Basic: ₹9,000 one-time + ₹499/mo
-- Standard: ₹19,000 one-time + ₹999/mo (Most Popular)
-- Pro: ₹29,000 one-time + ₹1,499/mo
+## Core Services
+- Lead Generation: Laser-targeted Meta ads that bring real, qualified inquiries.
+- Ad Creatives: High-performing image, video, and carousel creatives.
+- Conversion Systems: Seamless WhatsApp-based funnels.
 
-## Services
-- Digital showrom website design
-- QR Code generation for booths and products
-- Downloadable PDF Catalogs
-- Product Photography
+## Industries We Serve
+- Real Estate
+- Clinics & Healthcare
+- Interior Design
+- Solar
+- Coaching
+
+## Our Process
+1. We set up your system (Landing pages, ad accounts, WhatsApp automation)
+2. We run ads (High-converting Meta campaigns)
+3. You get customers (Leads message you directly on WhatsApp)
 
 ## Contact
-Email: hello@ambleandfox.com
-WhatsApp: +91 98765 43210 (simulated)
+Website: https://www.ambleandfox.com
+WhatsApp: +91 78669 55638
