@@ -162,7 +162,7 @@ export default function HomePage() {
                   <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.896 3.456-8.352 9.12-8.352 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
                 </svg>
                 <p className="font-heading text-xl md:text-2xl text-brand-black leading-relaxed italic">
-                  &quot;Amble &amp; Fox completely transformed our client acquisition. Before, we were struggling with expensive clicks that went nowhere. Now, our sales team wakes up to qualified WhatsApp leads every morning.&quot;
+                  &quot;Amble &amp; Fox Media completely transformed our client acquisition. Before, we were struggling with expensive clicks that went nowhere. Now, our sales team wakes up to qualified WhatsApp leads every morning.&quot;
                 </p>
                 <div className="mt-8">
                   <p className="font-heading font-bold text-brand-black">Priya Sharma</p>
@@ -187,7 +187,7 @@ export default function HomePage() {
               Get Started Now
             </Button>
             <Button
-              href="https://wa.me/917866955638?text=Hi%20Amble%20%26%20Fox%2C%20I%27m%20interested%20in%20your%20services"
+              href="https://wa.me/917866955638?text=Hi%20Amble%20%26%20Fox%20Media%2C%20I%27m%20interested%20in%20your%20services"
               variant="outline"
               external
               className="border-gray-600 text-brand-white hover:border-brand-white hover:text-brand-black hover:bg-white"

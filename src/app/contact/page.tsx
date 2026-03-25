@@ -2,7 +2,7 @@ import SectionHeading from "@/components/SectionHeading";
 import Button from "@/components/Button";
 
 export const metadata = {
-  title: "Contact | Amble & Fox",
+  title: "Contact | Amble & Fox Media",
   description: "Message us directly on WhatsApp.",
 };
 
@@ -16,7 +16,7 @@ export default function ContactPage() {
         />
         <div className="mt-8 flex justify-center pb-20">
           <Button
-            href="https://wa.me/917866955638?text=Hi%20Amble%20%26%20Fox%2C%20I%20want%20to%20learn%20more%20about%20your%20services."
+            href="https://wa.me/917866955638?text=Hi%20Amble%20%26%20Fox%20Media%2C%20I%20want%20to%20learn%20more%20about%20your%20services."
             variant="primary"
             external
             className="flex items-center gap-3 text-lg px-8 py-5"

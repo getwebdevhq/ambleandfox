@@ -3,7 +3,7 @@ import Card from "@/components/Card";
 import Button from "@/components/Button";
 
 export const metadata = {
-  title: "Flexible Pricing | Amble & Fox",
+  title: "Flexible Pricing | Amble & Fox Media",
   description: "Modular pricing designed around your specific growth needs.",
 };
 

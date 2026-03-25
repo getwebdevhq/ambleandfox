@@ -3,7 +3,7 @@ import Card from "@/components/Card";
 import Button from "@/components/Button";
 
 export const metadata = {
-  title: "Services | Amble & Fox",
+  title: "Services | Amble & Fox Media",
   description: "End-to-end performance marketing systems.",
 };
 

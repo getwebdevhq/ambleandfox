@@ -3,7 +3,7 @@ import Button from "@/components/Button";
 import SectionHeading from "@/components/SectionHeading";
 
 export const metadata = {
-  title: "Add-Ons — Amble & Fox",
+  title: "Add-Ons — Amble & Fox Media",
   description: "Product photography and catalog design services.",
 };
 

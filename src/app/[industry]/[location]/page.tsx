@@ -51,7 +51,7 @@ export async function generateMetadata({ params }: { params: { industry: string;
   const formattedCity = location.charAt(0).toUpperCase() + location.slice(1);
 
   return {
-    title: `Get More ${formattedIndustry} Leads in ${formattedCity} | Amble & Fox`,
+    title: `Get More ${formattedIndustry} Leads in ${formattedCity} | Amble & Fox Media`,
     description: `Generate high-quality ${formattedIndustry} leads in ${formattedCity} using Meta Ads and WhatsApp funnels. Start getting real inquiries today.`,
   };
 }
@@ -70,7 +70,7 @@ export default function SeoLandingPage({ params }: { params: { industry: string;
   const schema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": `Amble & Fox - ${formattedIndustry} Leads in ${formattedCity}`,
+    "name": `Amble & Fox Media - ${formattedIndustry} Leads in ${formattedCity}`,
     "description": `Generate high-quality ${formattedIndustry} leads in ${formattedCity} using Meta Ads and WhatsApp funnels.`,
     "areaServed": formattedCity,
     "serviceArea": {
@@ -196,7 +196,7 @@ export default function SeoLandingPage({ params }: { params: { industry: string;
               Get Started Now
             </Button>
             <Button
-              href="https://wa.me/917866955638?text=Hi%20Amble%20%26%20Fox%2C%20I%27m%20interested%20in%20your%20services"
+              href="https://wa.me/917866955638?text=Hi%20Amble%20%26%20Fox%20Media%2C%20I%27m%20interested%20in%20your%20services"
               variant="outline"
               external
               className="border-gray-600 text-brand-white hover:border-brand-white hover:text-brand-black hover:bg-white"

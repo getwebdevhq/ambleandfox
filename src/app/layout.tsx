@@ -19,8 +19,8 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "Amble & Fox — Performance Marketing & Lead Generation Agency",
-    template: "%s | Amble & Fox",
+    default: "Amble & Fox Media — Performance Marketing & Lead Generation Agency",
+    template: "%s | Amble & Fox Media",
   },
   description:
     "We run hyper-targeted Meta Ads and optimize WhatsApp funnels to bring high-quality leads directly to your business. Stop guessing, start scaling.",
@@ -32,12 +32,12 @@ export const metadata: Metadata = {
     "meta ads expert"
   ],
   openGraph: {
-    title: "Amble & Fox — Performance Marketing & Lead Generation",
+    title: "Amble & Fox Media — Performance Marketing & Lead Generation",
     description:
       "Turn clicks into high-quality WhatsApp inquiries with predictable lead generation systems.",
     type: "website",
     locale: "en_IN",
-    siteName: "Amble & Fox",
+    siteName: "Amble & Fox Media",
   },
 };
 

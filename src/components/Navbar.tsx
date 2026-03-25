@@ -8,6 +8,7 @@ const navLinks = [
   { href: "/", label: "Home" },
   { href: "/services", label: "Services" },
   { href: "/pricing", label: "Pricing" },
+  { href: "/portfolio", label: "Portfolio" },
   { href: "/ad-library", label: "Ad Library" },
   { href: "/about", label: "About" },
 ];
@@ -23,7 +24,7 @@ export default function Navbar() {
           href="/"
           className="font-heading text-2xl font-bold tracking-tight text-brand-black md:text-3xl"
         >
-          Amble <span className="text-brand-primary font-serif italic">&amp;</span> Fox
+          Amble <span className="text-brand-primary font-serif italic">&amp;</span> Fox Media
         </Link>
 
         {/* Desktop Links */}
@@ -37,7 +38,7 @@ export default function Navbar() {
               {link.label}
             </Link>
           ))}
-          <Button href="https://wa.me/917866955638?text=Hi%20Amble%20%26%20Fox%2C%20I%27m%20interested%20in%20your%20services" variant="primary" external>
+          <Button href="https://wa.me/917866955638?text=Hi%20Amble%20%26%20Fox%20Media%2C%20I%27m%20interested%20in%20your%20services" variant="primary" external>
             Chat on WhatsApp
           </Button>
         </div>
@@ -75,7 +76,7 @@ export default function Navbar() {
               </Link>
             ))}
             <div className="mt-4">
-               <Button href="https://wa.me/917866955638?text=Hi%20Amble%20%26%20Fox%2C%20I%27m%20interested%20in%20your%20services" variant="primary" external className="w-full">
+               <Button href="https://wa.me/917866955638?text=Hi%20Amble%20%26%20Fox%20Media%2C%20I%27m%20interested%20in%20your%20services" variant="primary" external className="w-full">
                 Chat on WhatsApp
               </Button>
             </div>

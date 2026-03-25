@@ -2,7 +2,7 @@ import Button from "@/components/Button";
 import SectionHeading from "@/components/SectionHeading";
 
 export const metadata = {
-  title: "Trade Fair Tools — Amble & Fox",
+  title: "Trade Fair Tools — Amble & Fox Media",
   description: "Maximize your trade fair ROI with QR codes and digital catalogs.",
 };
 

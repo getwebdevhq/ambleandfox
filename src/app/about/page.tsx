@@ -3,7 +3,7 @@ import Card from "@/components/Card";
 import Image from "next/image";
 
 export const metadata = {
-  title: "About Us | Amble & Fox",
+  title: "About Us | Amble & Fox Media",
   description: "Results over vanity. Our story and values.",
 };
 

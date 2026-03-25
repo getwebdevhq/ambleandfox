@@ -22,7 +22,7 @@ export default function LeadCaptureForm({ industry, location }: { industry?: str
     };
 
     try {
-      const message = `Hi Amble & Fox,\n\nI'm interested in a free growth strategy.\n\nName: ${data.name}\nEmail: ${data.email}\nWhatsApp: ${data.whatsapp}\nIndustry: ${data.industry}\nLocation: ${data.location}`;
+      const message = `Hi Amble & Fox Media,\n\nI'm interested in a free growth strategy.\n\nName: ${data.name}\nEmail: ${data.email}\nWhatsApp: ${data.whatsapp}\nIndustry: ${data.industry}\nLocation: ${data.location}`;
       const whatsappUrl = `https://wa.me/917866955638?text=${encodeURIComponent(message)}`;
       
       // Redirect or open WhatsApp
