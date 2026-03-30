@@ -17,6 +17,13 @@ const config: Config = {
           gray: "#F5F5F5",
           "gray-light": "#FAFAFA",
         },
+        uk: {
+          background: "#0B0B0B",
+          primary: "#FF6A00",
+          accent: "#C7F000",
+          text: "#FFFFFF",
+          subtext: "#A0A0A0"
+        }
       },
       fontFamily: {
         heading: ["var(--font-playfair)", "serif"],
