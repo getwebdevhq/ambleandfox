@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
 export default function UKLandingPage() {
-  const whatsappNumber = "441234567890"; // TODO: Replace with actual UK number
+  const whatsappNumber = "447445763010"; // Updated with actual UK number
   const defaultMessage = "Hi, I want a free audit of my website/ads";
   const whatappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(defaultMessage)}`;
 
