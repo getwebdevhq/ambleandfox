@@ -43,7 +43,7 @@ export default function UKLandingPage() {
       <section className="w-full bg-[#111111] py-20 px-6 border-y border-[#222]">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">
-            You don't have a traffic problem. <br className="hidden md:block"/><span className="text-uk-primary mt-2 block">You have a conversion problem.</span>
+            You don&apos;t have a traffic problem. <br className="hidden md:block"/><span className="text-uk-primary mt-2 block">You have a conversion problem.</span>
           </h2>
           
           <div className="grid md:grid-cols-2 gap-12">
@@ -84,7 +84,7 @@ export default function UKLandingPage() {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-uk-primary/5 blur-[120px] rounded-full pointer-events-none"></div>
         <div className="max-w-4xl mx-auto text-center relative z-10">
           <h2 className="text-3xl md:text-5xl font-bold mb-10 leading-tight">
-            We don't design websites. <br/><span className="text-uk-accent block mt-2">We build lead systems.</span>
+            We don&apos;t design websites. <br/><span className="text-uk-accent block mt-2">We build lead systems.</span>
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-left">
             {[
@@ -225,9 +225,9 @@ export default function UKLandingPage() {
       {/* Main CTA Section */}
       <section className="w-full py-32 px-6 flex flex-col items-center text-center pb-40">
         <h2 className="text-4xl md:text-5xl font-bold mb-6 max-w-3xl leading-tight">
-          You're already getting traffic. <br className="hidden md:block"/><span className="text-uk-primary mt-2 block">You're just not converting it.</span>
+          You&apos;re already getting traffic. <br className="hidden md:block"/><span className="text-uk-primary mt-2 block">You&apos;re just not converting it.</span>
         </h2>
-        <p className="text-xl text-uk-subtext mb-10">We'll show you exactly what's broken.</p>
+        <p className="text-xl text-uk-subtext mb-10">We&apos;ll show you exactly what&apos;s broken.</p>
         <Link href={whatappLink} target="_blank" className="bg-uk-primary hover:bg-[#E65A00] text-white font-bold py-5 px-10 rounded-md transition-colors text-xl shadow-[0_0_30px_rgba(255,106,0,0.4)] hover:shadow-[0_0_40px_rgba(255,106,0,0.6)]">
           Get Free 2-Minute Audit on WhatsApp
         </Link>
