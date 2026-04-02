@@ -90,7 +90,7 @@ export default function AdsCreativeOffer() {
                 <span className="text-xl text-gray-500 font-body ml-2">one-time</span>
               </div>
               <p className="mt-6 font-body text-lg text-gray-600 max-w-md">
-                Stop wasting money on ads that don't hook. Get an arsenal of profit-generating creatives built specifically for your brand.
+                Stop wasting money on ads that don&apos;t hook. Get an arsenal of profit-generating creatives built specifically for your brand.
               </p>
               
               <ul className="mt-10 space-y-4">

@@ -6,8 +6,9 @@ import Button from "./Button";
 
 const navLinks = [
   { href: "/", label: "Home" },
-  { href: "/services", label: "Services" },
-  { href: "/pricing", label: "Pricing" },
+  { href: "/ads-creative-offer", label: "Ad Creatives" },
+  { href: "/websites-hook-offer", label: "New Website" },
+  { href: "/website-redesign-offer", label: "Website Redesign" },
   { href: "/portfolio", label: "Portfolio" },
   { href: "/ad-library", label: "Ad Library" },
   { href: "/about", label: "About" },

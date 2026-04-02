@@ -1,13 +1,13 @@
 "use client";
 
-import { useState, FormEvent } from "react";
+import { useState, FormEvent, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 
 interface FunnelLeadCaptureFormProps {
   defaultService?: "Ad Creatives" | "New Website" | "Website Redesign";
 }
 
-export default function FunnelLeadCaptureForm({
+function FormInner({
   defaultService = "Ad Creatives",
 }: FunnelLeadCaptureFormProps) {
   const searchParams = useSearchParams();
@@ -28,7 +28,9 @@ export default function FunnelLeadCaptureForm({
 
     try {
       // 1. Fire fbq('track','Lead')
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       if (typeof window !== "undefined" && (window as any).fbq) {
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         (window as any).fbq("track", "Lead");
       }
 
@@ -44,7 +46,9 @@ export default function FunnelLeadCaptureForm({
       const encodedMessage = encodeURIComponent(messageTemplate);
 
       // 4. Fire fbq('track','Contact')
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       if (typeof window !== "undefined" && (window as any).fbq) {
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         (window as any).fbq("track", "Contact");
       }
 
@@ -66,7 +70,7 @@ export default function FunnelLeadCaptureForm({
   return (
     <div className="bg-white shadow-soft rounded-2xl p-6 md:p-8 border border-gray-100">
       <h3 className="mb-6 font-heading text-2xl font-bold text-gray-900">
-        Ready to scale? Let's talk.
+        Ready to scale? Let&apos;s talk.
       </h3>
       <form onSubmit={handleSubmit} className="space-y-5">
         <div>
@@ -111,7 +115,7 @@ export default function FunnelLeadCaptureForm({
             className={inputClasses}
             value={formData.service}
             onChange={(e) =>
-              setFormData({ ...formData, service: e.target.value as any })
+              setFormData({ ...formData, service: e.target.value as "Ad Creatives" | "New Website" | "Website Redesign" })
             }
           >
             <option value="Ad Creatives">Ad Creatives</option>
@@ -166,9 +170,17 @@ export default function FunnelLeadCaptureForm({
           {loading ? "Redirecting..." : "Get Started Now"}
         </button>
         <p className="mt-4 text-center text-xs text-gray-500 font-body">
-          You'll be redirected to WhatsApp. We promise not to spam.
+          You&apos;ll be redirected to WhatsApp. We promise not to spam.
         </p>
       </form>
     </div>
   );
+}
+
+export default function FunnelLeadCaptureForm(props: FunnelLeadCaptureFormProps) {
+  return (
+    <Suspense fallback={<div className="bg-white shadow-soft rounded-2xl p-6 md:p-8 border border-gray-100 min-h-[500px] flex items-center justify-center"><div className="w-8 h-8 rounded-full border-4 border-brand-primary border-t-transparent animate-spin"></div></div>}>
+      <FormInner {...props} />
+    </Suspense>
+  )
 }

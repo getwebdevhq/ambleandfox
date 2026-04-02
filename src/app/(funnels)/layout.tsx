@@ -2,7 +2,6 @@ import Navbar from "@/components/Navbar";
 import MinimalFooter from "@/components/MinimalFooter";
 import WhatsAppLeadFloatingButton from "@/components/WhatsAppLeadFloatingButton";
 import MetaPixel from "@/components/MetaPixel";
-import { Inter, Playfair_Display } from "next/font/google";
 import "@/app/globals.css";
 
 export const metadata = {

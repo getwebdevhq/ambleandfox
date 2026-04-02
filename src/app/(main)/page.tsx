@@ -20,11 +20,11 @@ export default function HomePage() {
                 We run ads, optimize funnels, and bring customers directly to your WhatsApp.
               </p>
               <div className="mt-10 flex flex-wrap gap-4">
-                <Button href="/contact" variant="primary">
-                  Get Leads Now
+                <Button href="/ads-creative-offer" variant="primary">
+                  Get Ad Creatives
                 </Button>
-                <Button href="/services" variant="outline">
-                  See How It Works
+                <Button href="/websites-hook-offer" variant="outline">
+                  New Website
                 </Button>
               </div>
             </div>
@@ -70,33 +70,34 @@ export default function HomePage() {
           <div className="grid gap-8 md:grid-cols-3">
             {[
               {
-                title: "Lead Generation",
-                desc: "Laser-targeted Meta ads that bring real, qualified inquiries to your business.",
-              },
-              {
                 title: "Ad Creatives",
-                desc: "High-performing image and video creatives designed specifically to stop the scroll and convert.",
+                desc: "High-converting image and video creatives designed specifically to stop the scroll.",
+                href: "/ads-creative-offer"
               },
               {
-                title: "Conversion Systems",
-                desc: "Seamless WhatsApp-based funnels that capture attention and turn it into conversations.",
+                title: "New Websites",
+                desc: "We design standalone funnels and sites that turn clicks perfectly into customers.",
+                href: "/websites-hook-offer"
+              },
+              {
+                title: "Website Redesign",
+                desc: "Bring your digital presence into the modern era with improved conversion design.",
+                href: "/website-redesign-offer"
               },
             ].map((service) => (
-              <Card key={service.title} className="text-center group">
-                <h3 className="mb-4 font-heading text-2xl font-medium text-brand-black transition-colors group-hover:text-brand-primary">
-                  {service.title}
-                </h3>
-                <p className="font-body text-gray-600 leading-relaxed">
-                  {service.desc}
-                </p>
-              </Card>
+              <a key={service.title} href={service.href} className="group block h-full">
+                <Card className="text-center h-full transition-shadow hover:shadow-soft-lg">
+                  <h3 className="mb-4 font-heading text-2xl font-medium text-brand-black transition-colors group-hover:text-brand-primary">
+                    {service.title}
+                  </h3>
+                  <p className="font-body text-gray-600 leading-relaxed">
+                    {service.desc}
+                  </p>
+                </Card>
+              </a>
             ))}
           </div>
-          <div className="mt-16 text-center">
-            <Button href="/services" variant="outline">
-              View All Services
-            </Button>
-          </div>
+          {/* Removed View All Services button */}
         </div>
       </section>
 
@@ -183,8 +184,8 @@ export default function HomePage() {
             centered
           />
           <div className="mt-10 flex flex-wrap justify-center gap-6">
-            <Button href="/contact" variant="primary">
-              Get Started Now
+            <Button href="/ads-creative-offer" variant="primary">
+              Get Ad Creatives
             </Button>
             <Button
               href="https://wa.me/917866955638?text=Hi%20Amble%20%26%20Fox%20Media%2C%20I%27m%20interested%20in%20your%20services"

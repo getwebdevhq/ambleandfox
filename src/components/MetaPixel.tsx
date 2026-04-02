@@ -8,7 +8,7 @@ export const META_PIXEL_ID = "3741862339461754";
 
 export const pageview = () => {
   if (typeof window !== "undefined") {
-    // @ts-ignore
+    // @ts-expect-error: fbq is appended globally by the Meta Pixel script
     window.fbq("track", "PageView");
   }
 };

@@ -1,4 +1,4 @@
-import { CheckCircle2, ArrowDown, Zap, LayoutTemplate, Smartphone, PenTool, Database } from "lucide-react";
+import { ArrowDown, Zap, LayoutTemplate, Smartphone, PenTool, Database } from "lucide-react";
 import FunnelLeadCaptureForm from "@/components/FunnelLeadCaptureForm";
 
 export default function WebsitesHookOffer() {
@@ -103,7 +103,7 @@ export default function WebsitesHookOffer() {
               </div>
               
               <p className="mt-6 font-body text-lg text-gray-600 max-w-md">
-                Don't wait months for an agency to design a digital brochure. Get a high-converting website built fast.
+                Don&apos;t wait months for an agency to design a digital brochure. Get a high-converting website built fast.
               </p>
             </div>
 

@@ -20,10 +20,10 @@ export default function WebsiteRedesignOffer() {
       <section className="relative overflow-hidden bg-white px-6 py-20 text-center sm:py-32">
         <div className="container-main relative">
           <h1 className="mx-auto max-w-4xl font-heading text-5xl font-bold tracking-tight text-brand-black sm:text-7xl">
-            Your website isn't broken.
+            Your website isn&apos;t broken.
           </h1>
           <p className="mx-auto mt-6 max-w-2xl font-body text-xl text-gray-600 sm:text-2xl">
-            It's just <span className="text-brand-primary underline decoration-brand-black underline-offset-4 decoration-4 font-bold">outdated</span>.
+            It&apos;s just <span className="text-brand-primary underline decoration-brand-black underline-offset-4 decoration-4 font-bold">outdated</span>.
           </p>
           <div className="mt-10 flex justify-center gap-x-6">
             <a href="#offer-form" className="btn-primary">
