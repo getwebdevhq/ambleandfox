@@ -59,7 +59,7 @@ export default function AdsCreativeOffer() {
               <ul className="space-y-4">
                 {[
                   "Performance-driven creatives",
-                  "UGC style ads",
+                  "Scroll stopping ads",
                   "Built for conversions",
                 ].map((point, i) => (
                   <li key={i} className="flex items-start gap-3">
@@ -92,7 +92,7 @@ export default function AdsCreativeOffer() {
               <p className="mt-6 font-body text-lg text-gray-600 max-w-md">
                 Stop wasting money on ads that don&apos;t hook. Get an arsenal of profit-generating creatives built specifically for your brand.
               </p>
-              
+
               <ul className="mt-10 space-y-4">
                 {["7-Day Delivery", "Tested Frameworks", "Thumb-Stopping Designs"].map((item, i) => (
                   <li key={i} className="flex items-center gap-3">
