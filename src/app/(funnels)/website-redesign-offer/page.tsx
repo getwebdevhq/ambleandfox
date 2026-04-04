@@ -81,7 +81,7 @@ export default function WebsiteRedesignOffer() {
               WHAT YOU ACTUALLY GET
             </h2>
             <p className="font-body text-2xl text-gray-600 font-medium leading-relaxed">
-              This is not <span className="text-brand-black">"just a redesign."</span><br />
+              This is not <span className="text-brand-black">&quot;just a redesign.&quot;</span><br />
               This is a <span className="font-bold underline decoration-brand-primary underline-offset-4 decoration-4">custom-built, performance-focused website system.</span>
             </p>
           </div>
