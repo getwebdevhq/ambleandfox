@@ -73,6 +73,109 @@ export default function WebsiteRedesignOffer() {
         </div>
       </section>
 
+      {/* What You Actually Get Section */}
+      <section className="bg-white px-6 py-20 sm:py-32">
+        <div className="container-main">
+          <div className="mx-auto max-w-3xl text-center mb-16">
+            <h2 className="font-heading text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl mb-6">
+              WHAT YOU ACTUALLY GET
+            </h2>
+            <p className="font-body text-2xl text-gray-600 font-medium leading-relaxed">
+              This is not <span className="text-brand-black">"just a redesign."</span><br />
+              This is a <span className="font-bold underline decoration-brand-primary underline-offset-4 decoration-4">custom-built, performance-focused website system.</span>
+            </p>
+          </div>
+
+          <div className="mx-auto max-w-5xl space-y-8">
+            {[
+              {
+                number: "01",
+                title: "Industry Research",
+                items: [
+                  "Competitor breakdown (design + positioning)",
+                  "Market trends analysis",
+                  "Customer behaviour insights",
+                ],
+                outcome: "We don't design blindly. We reverse-engineer what already works."
+              },
+              {
+                number: "02",
+                title: "Brand Direction",
+                items: [
+                  "Clear positioning & USP",
+                  "Messaging that actually converts",
+                  "Offer structuring (hero services/products)",
+                  "Visual direction (premium, modern, relevant)",
+                ],
+                outcome: "Your website finally says the right thing."
+              },
+              {
+                number: "03",
+                title: "Custom-Built Website (No Templates)",
+                items: [
+                  "Fully custom design — no generic themes",
+                  "Built using modern development tools (faster, cleaner, more flexible)",
+                  "Optimised for speed, mobile & conversions",
+                  "Clean UI with premium feel",
+                ],
+                outcome: "You don't get a “Shopify-looking site.” You get a brand asset."
+              },
+              {
+                number: "04",
+                title: "Smart Systems & Automation",
+                items: [
+                  "Custom forms & lead capture",
+                  "Automated responses (no manual chasing)",
+                  "CRM-ready integrations",
+                  "Payment integration (if needed)",
+                ],
+                outcome: "Your website works like a system, not a brochure."
+              },
+              {
+                number: "05",
+                title: "Launch + Content Kit",
+                items: [
+                  "Fully live, ready-to-sell website",
+                  "Social media templates",
+                  "1-week launch content plan",
+                  "Simple usage guide",
+                ],
+                outcome: "You launch with clarity and momentum."
+              }
+            ].map((step, i) => (
+              <div key={i} className="flex flex-col sm:flex-row gap-6 bg-gray-50 rounded-3xl p-8 sm:p-10 border border-gray-100 shadow-sm relative overflow-hidden group hover:shadow-soft transition-all duration-300">
+                <div className="absolute top-0 right-0 p-8 text-8xl font-black text-gray-200 opacity-30 group-hover:text-brand-primary group-hover:opacity-10 transition-colors duration-500 pointer-events-none select-none">
+                  {step.number}
+                </div>
+                <div className="relative z-10 w-full">
+                  <h3 className="flex items-center gap-4 font-heading text-2xl font-bold text-gray-900 mb-6">
+                    <span className="flex h-10 w-10 items-center justify-center rounded-full bg-brand-black text-brand-primary font-bold text-sm">
+                      {step.number}
+                    </span>
+                    {step.title}
+                  </h3>
+                  <div className="grid md:grid-cols-5 gap-8 items-center">
+                    <ul className="space-y-3 md:col-span-3">
+                      {step.items.map((item, idx) => (
+                        <li key={idx} className="flex items-start gap-3">
+                           <ShieldCheck className="mt-1 h-5 w-5 shrink-0 text-brand-primary" />
+                           <span className="font-body text-gray-700 text-lg">{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                    <div className="md:col-span-2 bg-white rounded-2xl p-6 border-l-4 border-l-brand-primary shadow-sm h-full flex items-center min-h-[100px]">
+                      <p className="font-body font-medium text-brand-black text-lg flex gap-3">
+                        <span className="text-xl shrink-0">👉</span> <span>{step.outcome}</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Offer & Form Section */}
       <section id="offer-form" className="px-6 py-20 sm:py-32 bg-gray-50 border-t border-gray-200">
         <div className="container-main">
